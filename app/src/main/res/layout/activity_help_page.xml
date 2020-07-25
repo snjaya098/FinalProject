@@ -12,5 +12,5 @@
         android:layout_height="wrap_content"
         android:text="This is Help Page"
         tools:layout_editor_absoluteX="151dp"
-        tools:layout_editor_absoluteY="344dp" />
+        tools:layout_editor_absoluteY="281dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
