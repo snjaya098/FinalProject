@@ -7,10 +7,25 @@
     tools:context=".QuotePage">
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/txtQuotePage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="This is Quote Page"
-        tools:layout_editor_absoluteX="158dp"
-        tools:layout_editor_absoluteY="332dp" />
+        android:text="Quote of the Day"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.462"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.109" />
+
+    <ImageView
+        android:id="@+id/imageQuote"
+        android:layout_width="313dp"
+        android:layout_height="372dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/quote6" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
