@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class FeedbackPage extends AppCompatActivity {
 
@@ -15,9 +16,9 @@ public class FeedbackPage extends AppCompatActivity {
     private EditText EditTextMessage;
     private Button buttonSubmit;
 
-    private String name;
+    /*private String name;
     private String email;
-    private String message;
+    private String message;*/
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,15 +30,17 @@ public class FeedbackPage extends AppCompatActivity {
         EditTextMessage = (EditText) findViewById(R.id.EditTextMessage);
 
         buttonSubmit = (Button) findViewById(R.id.buttonSubmit);
+
         buttonSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                openThnxPage();
+                finish();
+                ShowMsg();
             }
         });
     }
-    public void openThnxPage(){
-        Intent intent = new Intent(this, FeedbackThnx.class);
-        startActivity(intent);
+
+    public void ShowMsg(){
+        Toast.makeText(this,"Thank you for your feedback!",Toast.LENGTH_LONG).show();
     }
 }
