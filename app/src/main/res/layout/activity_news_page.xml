@@ -4,13 +4,75 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FCCDF9"
     tools:context=".NewsPage">
 
     <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="This is News Page"
-        tools:layout_editor_absoluteX="173dp"
-        tools:layout_editor_absoluteY="334dp" />
+        android:id="@+id/txtNewsPage"
+        android:layout_width="203dp"
+        android:layout_height="44dp"
+        android:fontFamily="@font/days_one"
+        android:text="News Page"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#9C27B0"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.096" />
+
+    <Button
+        android:id="@+id/buttonHuff"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:background="@drawable/rounded_corners"
+        android:text="HuffPost"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.471"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.269" />
+
+    <Button
+        android:id="@+id/buttonToday"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:background="@drawable/rounded_corners"
+        android:text="Today News"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.471"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.437" />
+
+    <Button
+        android:id="@+id/buttonPos"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:background="@drawable/rounded_corners"
+        android:text="Positive.News"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.471"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.616" />
+
+    <Button
+        android:id="@+id/buttonGood"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:background="@drawable/rounded_corners"
+        android:text="GoodNews"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.471"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.781" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

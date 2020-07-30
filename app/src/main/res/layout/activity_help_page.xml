@@ -4,68 +4,72 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FCCDF9"
     tools:context=".HelpPage">
 
     <TextView
         android:id="@+id/txtDescribe"
-        android:layout_width="357dp"
-        android:layout_height="49dp"
-        android:text=
-            "This page will tell you what each part of
-            this app does. Please use the drop down menu to look for information"
+        android:layout_width="327dp"
+        android:layout_height="77dp"
+        android:fontFamily="sans-serif"
+        android:text="Welcome to the About page! This page will tell you what each part of this app does. Please use the drop down menu to look for information regarding each section of the app!"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.296"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.151" />
+        app:layout_constraintVertical_bias="0.171" />
 
     <TextView
         android:id="@+id/txtAbout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="This is the Help Page"
+        android:fontFamily="@font/days_one"
+        android:text="About Page"
+        android:textColor="#9C27B0"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintHorizontal_bias="0.151"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.049" />
+        app:layout_constraintVertical_bias="0.048" />
 
     <Spinner
         android:id="@+id/spinMenu"
-        android:layout_width="347dp"
+        android:layout_width="328dp"
         android:layout_height="35dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.406"
+        app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.288" />
+        app:layout_constraintVertical_bias="0.334" />
 
     <Button
         android:id="@+id/buttonSelect"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Select"
         android:onClick="displayResult"
+        android:background="@drawable/accept_button"
+        android:text="Select"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintHorizontal_bias="0.12"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.416" />
+        app:layout_constraintVertical_bias="0.45" />
 
     <TextView
         android:id="@+id/txtDisplayResult"
         android:layout_width="332dp"
         android:layout_height="175dp"
+        android:fontFamily="sans-serif"
         android:text="Result"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.329"
+        app:layout_constraintHorizontal_bias="0.531"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.782" />
+        app:layout_constraintVertical_bias="0.789" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

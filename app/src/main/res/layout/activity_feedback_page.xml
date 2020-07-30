@@ -4,75 +4,101 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FCCDF9"
     tools:context=".FeedbackPage">
 
+
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/txtFeedbackTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="This is feedback Page"
+        android:fontFamily="@font/days_one"
+        android:text="Feedback Page"
+        android:textColor="#9C27B0"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.065" />
-
+        app:layout_constraintVertical_bias="0.047" />
 
     <EditText
         android:id="@+id/EditTextName"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="340dp"
+        android:layout_height="40dp"
+        android:fontFamily="sans-serif"
         android:hint="Please enter your name"
         android:inputType="textPersonName"
+        android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.464"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.193">
-    </EditText>
+        app:layout_constraintVertical_bias="0.191"></EditText>
 
     <EditText
         android:id="@+id/EditTextEmail"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="340dp"
+        android:layout_height="40dp"
+        android:fontFamily="sans-serif"
         android:hint="Please enter your email"
         android:inputType="textEmailAddress"
+        android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.459"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.324">
-    </EditText>
+        app:layout_constraintVertical_bias="0.341"></EditText>
 
     <EditText
         android:id="@+id/EditTextMessage"
-        android:layout_width="409dp"
-        android:layout_height="210dp"
+        android:layout_width="340dp"
+        android:layout_height="190dp"
+        android:fontFamily="sans-serif"
         android:hint="Please enter your feedback"
         android:inputType="textMultiLine"
         android:lines="5"
+        android:textSize="14sp"
+        android:typeface="normal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.671">
+        app:layout_constraintVertical_bias="0.662">
 
     </EditText>
 
     <Button
         android:id="@+id/buttonSubmit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="130dp"
+        android:layout_height="55dp"
+        android:background="@drawable/accept_button"
+        android:fontFamily="@font/days_one"
+        android:onClick = "ShowAcceptMsg"
         android:text="Send Feedback"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.188"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.895"
-        android:onClick="ShowMsg"/>
+        app:layout_constraintVertical_bias="0.899" />
+
+    <Button
+        android:id="@+id/buttonCancel"
+        android:layout_width="130dp"
+        android:layout_height="55dp"
+        android:background="@drawable/cancel_button"
+        android:fontFamily="@font/days_one"
+        android:onClick = "ShowCancelMsg"
+        android:text="Cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.897" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
