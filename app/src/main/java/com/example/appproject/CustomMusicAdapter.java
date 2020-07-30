@@ -79,7 +79,7 @@ public class CustomMusicAdapter extends BaseAdapter {
 
     /**Class variables responsible for View Holder class
      * ViewHolder responsible for layout of the songs and buttons
-     * (play, pause, stop, download)
+     * (play, pause, stop)
      * */
     private class ViewHolder{
         TextView txtSongTitle, txtArtist;

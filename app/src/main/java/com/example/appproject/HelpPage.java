@@ -36,7 +36,6 @@ import androidx.appcompat.app.AppCompatActivity;
  * Class for the About page.
  * Responsible for telling the user how to use the app
  */
- * /
 public class HelpPage extends AppCompatActivity {
     //Class variables
     Spinner spinner; //drop down menu
@@ -63,7 +62,7 @@ public class HelpPage extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> adapterView, View view, int position, long id) {
                 switch (position){
                     case 0://if user selects Music
-                        record = "Need some music that puts that extra skip in your step? The Music page will provide you with a list of 5 random songs that define happiness and good vibes everyday. Like what you hear? Just click the download button and get it straight on your phone. Lets dance!";
+                        record = "Need some music that puts that extra skip in your step? The Music page will provide you with a list of 5 random songs that define happiness and good vibes everyday. Get your groove on!";
                         break;
                     case 1://if user selects News
                         record = "Want to see some news that's not all bad? The News page will provide you with links to some of our favourite sites for news. The difference is that it will take you sites that only posts positive and uplifting stories from around the world. All to make you smile :) ";
